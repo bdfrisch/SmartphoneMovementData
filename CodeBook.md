@@ -7,6 +7,7 @@ This codebook describes the tidy dataset produced by 'run_analysis.r'. The tidy 
 The tidy data set is a summary of the original data. It contains 180 observations and 68 variables.
 
 The original data collects human movement data from 30 subjects completed 6 different activities
+
 1. WALKING
 - WALKING_UPSTAIRS
 - WALKING_DOWNSTAIRS
@@ -23,6 +24,7 @@ The variable values in the original data set had already been summarized in the 
 For more information about the original dataset contact: activityrecognition@smartlab.ws
 
 The original data set was summarized in two ways for the tidy data set: 'SubjectMeans.txt'
+
 1. Only a subset of the original variables was selected. The variables selected correspond to the mean and standard deviations of each of the measurement features. 
 - Only the means for each activity for each individual are reported for the variables selected
 
@@ -45,8 +47,8 @@ The following information describes how the original data was collected. It is t
 
 Citation: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-###Human Activity Recognition Using Smartphones Dataset
-Version 1.0###
+###Human Activity Recognition Using Smartphones Dataset Version 1.0###
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Universit? degli Studi di Genova.
@@ -103,79 +105,80 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 ##Codebook - Variables##
 
-**Variable Number**	**Variable Name	**	**Variable Type**	**Description**
-1	SubjectID	Categorical	Index from 1-30 identifying the human subjects in the experiment
-2	ActivityIndex	Categorical	The movement activity corresponding to the observation
+**Variable Number 	Variable Name 		Variable Type		Description**
+
+1.	SubjectID	Categorical	Index from 1-30 identifying the human subjects in the experiment
+2.	ActivityIndex	Categorical	The movement activity corresponding to the observation
 			1 WALKING
 			2 WALKING_UPSTAIRS
 			3 WALKING_DOWNSTAIRS
 			4 SITTING
 			5 STANDING
 			6 LAYING
-3	tBodyAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-4	tBodyAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-5	tBodyAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-6	tBodyAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-7	tBodyAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-8	tBodyAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-9	tGravityAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-10	tGravityAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-11	tGravityAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-12	tGravityAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-13	tGravityAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-14	tGravityAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-15	tBodyAccJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-16	tBodyAccJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-17	tBodyAccJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-18	tBodyAccJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-19	tBodyAccJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-20	tBodyAccJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-21	tBodyGyromeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-22	tBodyGyromeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-23	tBodyGyromeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-24	tBodyGyrostdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-25	tBodyGyrostdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-26	tBodyGyrostdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-27	tBodyGyroJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-28	tBodyGyroJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-29	tBodyGyroJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-30	tBodyGyroJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-31	tBodyGyroJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-32	tBodyGyroJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-33	tBodyAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-34	tBodyAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-35	tGravityAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-36	tGravityAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-37	tBodyAccJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-38	tBodyAccJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-39	tBodyGyroMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-40	tBodyGyroMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-41	tBodyGyroJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-42	tBodyGyroJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-43	fBodyAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-44	fBodyAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-45	fBodyAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-46	fBodyAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-47	fBodyAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-48	fBodyAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-49	fBodyAccJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-50	fBodyAccJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-51	fBodyAccJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-52	fBodyAccJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-53	fBodyAccJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-54	fBodyAccJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-55	fBodyGyromeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-56	fBodyGyromeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-57	fBodyGyromeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-58	fBodyGyrostdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-59	fBodyGyrostdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-60	fBodyGyrostdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-61	fBodyAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-62	fBodyAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-63	fBodyBodyAccJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-64	fBodyBodyAccJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-65	fBodyBodyGyroMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-66	fBodyBodyGyroMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-67	fBodyBodyGyroJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
-68	fBodyBodyGyroJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+3.	tBodyAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+4.	tBodyAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+5.	tBodyAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+6.	tBodyAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+7.	tBodyAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+8.	tBodyAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+9.	tGravityAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+10.	tGravityAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+11.	tGravityAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+12.	tGravityAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+13.	tGravityAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+14.	tGravityAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+15.	tBodyAccJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+16.	tBodyAccJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+17.	tBodyAccJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+18.	tBodyAccJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+19.	tBodyAccJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+20.	tBodyAccJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+21.	tBodyGyromeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+22.	tBodyGyromeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+23.	tBodyGyromeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+24.	tBodyGyrostdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+25.	tBodyGyrostdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+26.	tBodyGyrostdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+27.	tBodyGyroJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+28.	tBodyGyroJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+29.	tBodyGyroJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+30.	tBodyGyroJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+31.	tBodyGyroJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+32.	tBodyGyroJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+33.	tBodyAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+34.	tBodyAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+35.	tGravityAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+36.	tGravityAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+37.	tBodyAccJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+38.	tBodyAccJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+39.	tBodyGyroMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+40.	tBodyGyroMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+41.	tBodyGyroJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+42.	tBodyGyroJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+43.	fBodyAccmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+44.	fBodyAccmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+45.	fBodyAccmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+46.	fBodyAccstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+47.	fBodyAccstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+48.	fBodyAccstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+49.	fBodyAccJerkmeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+50.	fBodyAccJerkmeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+51.	fBodyAccJerkmeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+52.	fBodyAccJerkstdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+53.	fBodyAccJerkstdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+54.	fBodyAccJerkstdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+55.	fBodyGyromeanX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+56.	fBodyGyromeanY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+57.	fBodyGyromeanZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+58.	fBodyGyrostdX	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+59.	fBodyGyrostdY	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+60.	fBodyGyrostdZ	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+61.	fBodyAccMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+62.	fBodyAccMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+63.	fBodyBodyAccJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+64.	fBodyBodyAccJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+65.	fBodyBodyGyroMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+66.	fBodyBodyGyroMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+67.	fBodyBodyGyroJerkMagmean	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
+68.	fBodyBodyGyroJerkMagstd	Continuous	Mean of a normalized variable [-1, 1] corresponding to all observations for a given subject for a specific human movement activity
 
