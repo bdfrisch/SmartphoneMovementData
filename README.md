@@ -22,12 +22,12 @@ First load the feature list
 Next load the test data
 	subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt",sep=" ")
 	y_test<-read.table("./UCI HAR Dataset/test/y_test.txt",sep=" ")
-	X_test<-read.table("./UCI HAR Dataset/test/X_test.txt",sep=" ")
+	X_test<-read.table("./UCI HAR Dataset/test/X_test.txt")
 
 Next load the training data
 	subject_train<-read.table("./UCI HAR Dataset/train/subject_train.txt",sep=" ")
 	y_train<-read.table("./UCI HAR Dataset/train/y_train.txt",sep=" ")
-	X_train<-read.table("./UCI HAR Dataset/train/X_train.txt",sep=" ")
+	X_train<-read.table("./UCI HAR Dataset/train/X_train.txt")
 
 
 ### Combine the training and the test sets to create a single data set ###
