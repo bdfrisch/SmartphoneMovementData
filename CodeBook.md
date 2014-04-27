@@ -104,8 +104,8 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 
 ##Codebook - Variables##
-
-**Variable Number 	Variable Name 		Variable Type		Description**
+[apologies for the poor formatting of the variables. I need to learn more about formatting tables in markdown]
+**Variable Number, 	Variable Name, 		Variable Type,		Description**
 
 1.	SubjectID	Categorical	Index from 1-30 identifying the human subjects in the experiment
 2.	ActivityIndex	Categorical	The movement activity corresponding to the observation
